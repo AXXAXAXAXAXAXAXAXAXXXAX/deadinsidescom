@@ -1,0 +1,221 @@
+@import url("./modal-window.css");
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    background: black;
+    color: white;
+}
+
+.wrapper {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+header nav {
+    margin-top: 54px;
+    margin-bottom: 54px;
+}
+
+header a {
+    color: rgba(255, 255, 255, 0.48);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.3s ease;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+header li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 32px;
+}
+header li:first-child {
+    margin-left: 96px;
+}
+header li:last-child {
+    margin-right: 96px;
+    float: right;
+}
+header li:last-child a {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 107, 0, 0.48) 0%,
+        rgba(219, 0, 255, 0.48) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header li:last-child a:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 107, 0, 1) 0%,
+        rgba(219, 0, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+.main-block {
+    padding-top: 104px;
+    padding-left: 96px;
+    padding-bottom: 104px;
+    background-image: url(./../img/kaneki.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.main-text {
+    width: 500px;
+    height: 100%;
+}
+
+.main-text h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.main-text p {
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 20px;
+    margin: 0;
+}
+
+.main-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.consultation-button {
+    width: max-content;
+    margin-top: 32px;
+    padding: 16px 32px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(10deg, #ff6b00, #db00ff);
+    -moz-border-image: -moz-linear-gradient(10deg, #ff6b00, #db00ff);
+    -webkit-border-image: -webkit-linear-gradient(10deg, #ff6b00, #db00ff);
+    border-image-slice: 1;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-us {
+    padding: 0 128px;
+}
+
+main h2 {
+    text-align: center;
+    width: 100%;
+    margin: 60px auto 60px auto;
+    font-size: 48px;
+}
+
+.about-us p {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.48);
+    margin-bottom: 20px;
+}
+
+.about-us p:last-child {
+    margin-bottom: 0;
+}
+
+.reviews {
+    padding: 0 128px;
+    overflow: hidden;
+}
+.reviews-description {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.48);
+    margin-bottom: 60px;
+}
+.reviews-description h2 {
+    color: white;
+}
+
+.review {
+    width: 350px !important;
+    height: 302px !important;
+    border: 1px solid #db00ff;
+    border-radius: 12px;
+}
+
+.avatar {
+    margin: 12px 0 0 12px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid #db00ff;
+    border-radius: 50px;
+}
+
+.review h3 {
+    float: right;
+    margin: 42px 57px 0 0;
+    font-size: 32px;
+}
+
+.review p {
+    text-align: center !important;
+    color: rgba(255, 255, 255, 0.48);
+    text-align: justify;
+    font-size: 20px;
+    margin: 33px 40px 0 40px;
+}
+
+.review:first-child {
+    float: left;
+    margin-left: 40px;
+}
+.review:last-child {
+    float: right;
+    margin-right: 40px;
+}
+
+.contacts {
+    padding: 0 128px;
+}
+.contacts p {
+    text-align: justify;
+    margin: 20px 0;
+}
+.contacts p,
+li {
+    color: rgba(255, 255, 255, 0.48);
+}
+.contacts li a {
+    color: rgba(255, 255, 255, 0.48);
+}
+.contacts li a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.3s ease;
+}
+
+footer {
+    padding-top: 60px;
+    margin: 0;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.12);
+    font-size: 12px;
+}
