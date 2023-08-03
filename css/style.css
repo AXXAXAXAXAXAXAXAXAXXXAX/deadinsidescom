@@ -113,6 +113,7 @@ header li:last-child a:hover {
     -moz-border-image: -moz-linear-gradient(10deg, #ff6b00, #db00ff);
     -webkit-border-image: -webkit-linear-gradient(10deg, #ff6b00, #db00ff);
     border-image-slice: 1;
+    class: "button"; 
 }
 
 main a {
@@ -218,4 +219,30 @@ footer {
     text-align: justify;
     color: rgba(255, 255, 255, 0.12);
     font-size: 12px;
+}
+.button {
+  background: linear-gradient(90deg, #ff6b00 0%, #db00ff 100%);
+  border-radius: 16px;
+
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(219, 0, 255, 0.7);
+  }
+  
+  70% {
+     box-shadow: 0 0 0 10px rgba(219, 0, 255, 0);
+  }
+  
+  100% {
+     box-shadow: 0 0 0 0 rgba(219, 0, 255, 0);
+  }
+}
+
+.button:hover {
+  animation: none;
+  
+  box-shadow: 0 0 10px 5px rgba(219, 0, 255, 0.7);
 }
